@@ -16,7 +16,7 @@ import Link from "next/link";
 
 export default function HomePage() {
   return (
-    <div className="bg-[#151515] h-svh flex flex-col relative">
+    <div className="bg-[#151515] h-svh flex flex-col relative md:hidden">
       <div className="h-[100vh] fixed bottom-0 left-0 right-0 z-10 bg-black">
         <Image
           src="/assets/splash.jpg"

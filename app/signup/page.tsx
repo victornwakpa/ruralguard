@@ -5,7 +5,7 @@ import Link from "next/link";
 
 export default function SignUp() {
   return (
-    <div className="min-h-screen flex flex-col relative">
+    <div className="min-h-screen flex flex-col relative md:hidden">
       <div className="flex items-center justify-center">
         <Image
           src="/assets/signup.jpg"
