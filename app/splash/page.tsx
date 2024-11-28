@@ -1,9 +1,22 @@
-import Image from "next/image";
-import Link from "next/link"
+"use client";
 
-export default function Splash() {
+import Image from "next/image";
+import { useEffect } from "react";
+import { useRouter } from "next/navigation";
+
+export default function SplashPage() {
+  const router = useRouter();
+
+  useEffect(() => {
+    const timer = setTimeout(() => {
+      router.push('/signup');
+    }, 3000);
+
+    return () => clearTimeout(timer);
+  }, [router]);
+
   return (
-    <Link href="/signup" className="bg-[#151515] h-svh flex flex-col relative  md:hidden">
+    <div className="bg-[#151515] h-svh flex flex-col relative">
       <div className="h-[75vh] fixed bottom-0 left-0 right-0 z-10 bg-black">
         <Image
           src="/assets/splash.jpg"
@@ -31,6 +44,6 @@ export default function Splash() {
           </p>
         </div>
       </div>
-    </Link>
+    </div>
   );
 }
