@@ -1,15 +1,14 @@
-import HomePage from "./components/home";
-import SignUp from "./components/signup";
-import Splash from "./components/splash";
+import HomePage from "./dashboard/page";
+import SignUp from "./signup/page";
 import WelcomePage from "./components/welcome";
 
 export default function Home() {
   return (
     <div>
-      {/* <WelcomePage /> */}
+      <WelcomePage />
       {/* <Splash /> */}
       {/* <SignUp /> */}
-      <HomePage />
+      {/* <HomePage /> */}
     </div>
-  )
+  );
 }

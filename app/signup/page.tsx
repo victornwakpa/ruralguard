@@ -1,6 +1,7 @@
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import Image from "next/image";
+import Link from "next/link";
 
 export default function SignUp() {
   return (
@@ -22,9 +23,9 @@ export default function SignUp() {
             <Input placeholder="Name" className="py-4 ring-0 outline-none" />
             <Input placeholder="Enter Location (community)" className="py-4 " />
           </div>
-          <Button className="block w-full text-xl font-medium bg-[#FF4500]">
+          <Link href="/dashboard" className="block py-3 text-white rounded-xl text-center w-full text-xl font-medium bg-[#FF4500]">
             Sign Up
-          </Button>
+          </Link>
         </div>
       </div>
     </div>

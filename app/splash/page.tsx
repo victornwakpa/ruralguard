@@ -1,8 +1,9 @@
 import Image from "next/image";
+import Link from "next/link"
 
 export default function Splash() {
   return (
-    <div className="bg-[#151515] min-h-screen flex flex-col relative">
+    <Link href="/signup" className="bg-[#151515] block min-h-screen flex flex-col relative">
       <div className="h-[75vh] fixed bottom-0 left-0 right-0 z-10 bg-black">
         <Image
           src="/assets/splash.jpg"
@@ -30,6 +31,6 @@ export default function Splash() {
           </p>
         </div>
       </div>
-    </div>
+    </Link>
   );
 }
