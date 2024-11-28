@@ -12,7 +12,7 @@ export default function WelcomePage() {
   };
 
   return (
-    <div className="min-h-screen flex flex-col relative md:hidden">
+    <div className="h-svh flex flex-col relative md:hidden">
       <div className="container px-5 pt-24 flex items-center justify-center">
         <div className="grid place-items-center">
           <Image src="/assets/logo.png" className="block" alt={"logo"} width={90} height={100} />

@@ -3,7 +3,7 @@ import Link from "next/link"
 
 export default function Splash() {
   return (
-    <Link href="/signup" className="bg-[#151515] min-h-screen flex flex-col relative  md:hidden">
+    <Link href="/signup" className="bg-[#151515] h-svh flex flex-col relative  md:hidden">
       <div className="h-[75vh] fixed bottom-0 left-0 right-0 z-10 bg-black">
         <Image
           src="/assets/splash.jpg"
